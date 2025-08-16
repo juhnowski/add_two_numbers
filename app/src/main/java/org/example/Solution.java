@@ -40,12 +40,19 @@ class Solution{
   }
 
   private ListNode sum1(int razr, ListNode l) {
+    int razr1 = 0;
     int tval = l.val + razr;
     if (tval > 9) {
       l.val = tval - 10;
-      l.next = new ListNode(1); 
     } else {
       l.val = tval;
+    }
+    if (l.next==null){
+      if (razr == 1) {
+        l.next = new ListNode(1);
+      }
+    } else {
+      l.next = sum1(razr1, l.next);
     }
     return l;
   }  
