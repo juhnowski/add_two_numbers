@@ -44,11 +44,13 @@ class Solution{
     int tval = l.val + razr;
     if (tval > 9) {
       l.val = tval - 10;
+      razr1 = 1;
     } else {
       l.val = tval;
     }
+
     if (l.next==null){
-      if (razr == 1) {
+      if (razr1 == 1) {
         l.next = new ListNode(1);
       }
     } else {

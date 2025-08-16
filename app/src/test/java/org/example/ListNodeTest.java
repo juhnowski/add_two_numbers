@@ -21,7 +21,7 @@ class ListNodeTest{
      ListNode l2_3 = new ListNode(3);
      ListNode l2_2 = new ListNode(2,l2_3);
      ListNode l2_1 = new ListNode(1,l2_2);
-    
+
      assertEquals(l1_1,l2_1);
   }
 
@@ -30,9 +30,7 @@ class ListNodeTest{
     ListNode l1_3 = new ListNode(3);
     ListNode l1_2 = new ListNode(2,l1_3);
     ListNode l1_1 = new ListNode(1,l1_2);
-       
-      
-    assertEquals(l1_1,l1_1);
-  }  
 
+    assertEquals(l1_1,l1_1);
+  }
 }
